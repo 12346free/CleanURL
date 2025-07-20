@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanUrl - 链接净化插件</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            color: #2c3e50;
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+        header p {
+            color: #666;
+            font-size: 1.2em;
+        }
+        h2 {
+            color: #34495e;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        h3 {
+            color: #555;
+            margin-top: 25px;
+            font-size: 1.5em;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background-color: #e8f5e9; /* Light green for list items */
+            margin-bottom: 10px;
+            padding: 12px 18px;
+            border-radius: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+        ul li strong {
+            color: #2e7d32; /* Darker green for emphasis */
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        .icon {
+            font-size: 1.2em;
+            margin-right: 8px;
+            color: #3498db; /* Blue for icons */
+        }
+        .example-box {
+            background-color: #f0f4f7;
+            border-left: 5px solid #3498db;
+            padding: 15px 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1em;
+            overflow-wrap: break-word; /* Ensures long URLs break correctly */
+        }
+        .example-box p strong {
+            color: #e74c3c; /* Red for original text */
+        }
+        .example-box p em {
+            color: #27ae60; /* Green for purified text */
+            font-style: normal;
+        }
+        .code-block {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        .button-group {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+            margin: 0 10px;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #777;
+            font-size: 0.9em;
+        }
+        .language-support img {
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CleanUrl 🚀</h1>
+            <p>您的链接净化专家：一键还原混淆网址，浏览更纯粹！</p>
+        </header>
+
+        <h2>✨ 功能特性</h2>
+        <ul>
+            <li><span class="icon">✅</span> <strong>智能替换全角句号：</strong> 自动将链接中的“。”替换为标准的“.”，确保链接格式正确可访问。</li>
+            <li><span class="icon">🗑️</span> <strong>高效移除干扰字符：</strong> 快速识别并删除链接中插入的“删”等无用字符，还原链接的原始面貌。</li>
+            <li><span class="icon">📋</span> <strong>支持净化剪贴板内容：</strong> 无论是从何处复制的链接，只需粘贴到剪贴板，CleanUrl 即可对其进行净化处理。</li>
+            <li><span class="icon">🚀</span> <strong>净化并直接访问：</strong> 不仅能净化链接并复制回剪贴板，更支持直接在新标签页中打开净化后的链接，省时省力。</li>
+            <li><span class="icon">🌐</span> <strong>多语言支持：</strong> 界面根据浏览器语言自动切换，提供简体中文、繁體中文和英文支持。</li>
+        </ul>
+
+        ---
+
+        <h2>🖥️ 示例演示</h2>
+        <p>告别混乱，拥抱清晰！看看 CleanUrl 如何将混淆的链接变得可用：</p>
+        <div class="example-box">
+            <p><strong>原始剪贴板内容：</strong> <code>ht删tp：//w删ww。exa删mple。co删m</code></p>
+            <p><em>净化后自动转换为：</em> <code>http://www.example.com</code></p>
+        </div>
+        <p>只需轻轻一点，复杂的链接瞬间变得简单明了！</p>
+
+        ---
+
+        <h2>📦 安装指南</h2>
+        <p>CleanUrl 支持主流的 Chromium 内核浏览器（如 Chrome, Edge）和 Firefox。安装步骤非常简单：</p>
+        <h3>开发者模式加载 (推荐)</h3>
+        <ol>
+            <li>首先，请前往 <a href="https://github.com/12346free/CleanURL" target="_blank">GitHub.com/12346free/CleanURL</a> 克隆或下载此仓库到您的本地。</li>
+            <li>在浏览器地址栏输入 <code>edge://extensions</code> (Edge) 或 <code>chrome://extensions</code> (Chrome) 或 <code>about:addons</code> (Firefox) 打开扩展程序管理页面。</li>
+            <li>在扩展程序页面的右上角（或左侧菜单栏）**开启“开发者模式”**。</li>
+            <li>点击“**加载已解压的扩展程序**”（或类似选项）。</li>
+            <li>选择您下载的 **CleanUrl/ 文件夹**，即可完成安装。</li>
+        </ol>
+
+        ---
+
+        <h2>🧪 使用方法</h2>
+        <p>安装完成后，CleanUrl 会成为您浏览器工具栏上的得力助手：</p>
+        <ol>
+            <li>点击浏览器工具栏上的 **CleanUrl 扩展图标**，打开插件面板。</li>
+            <li>将含有“删”或“。”等干扰字符的链接**粘贴到剪贴板**中。</li>
+            <li>在插件面板中，您可以选择：
+                <ul>
+                    <li><span class="icon">🧹</span> **【净化剪切板】**：净化链接并将其复制回剪贴板。</li>
+                    <li><span class="icon">🚀</span> **【净化并访问】**：直接在新标签页中打开净化后的链接。</li>
+                </ul>
+            </li>
+        </ol>
+
+        ---
+
+        <h2>🌐 多语言支持</h2>
+        <p class="language-support">
+            CleanUrl 为全球用户提供本地化体验，界面将根据您的浏览器语言自动显示：<br>
+            <img src="https://flagcdn.com/cn.svg" alt="Simplified Chinese Flag"> 简体中文 (zh-CN)<br>
+            <img src="https://flagcdn.com/hk.svg" alt="Traditional Chinese Flag"> 繁體中文 (zh-TW)<br>
+            <img src="https://flagcdn.com/us.svg" alt="English Flag"> English (en)
+        </p>
+
+        ---
+
+        <h2>🔐 权限说明</h2>
+        <p>CleanUrl 仅为实现其核心功能而请求必要的权限：</p>
+        <ul>
+            <li>`clipboardRead`, `clipboardWrite`：用于读取和写入剪贴板内容，这是净化链接的核心。</li>
+            <li>`tabs`：用于打开新的标签页访问净化后的链接。</li>
+            <li>`scripting`：用于未来功能扩展（目前保留）。</li>
+        </ul>
+        <p>我们承诺您的隐私安全，CleanUrl 不会收集任何个人数据。</p>
+
+        ---
+
+        <div class="button-group">
+            <a href="https://github.com/12346free/CleanURL" target="_blank" class="button">前往 GitHub 下载</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 CleanUrl. 保留所有权利。</p>
+            <p>本项目基于 <a href="https://github.com/12346free/CleanURL/blob/main/LICENSE" target="_blank">Apache-2.0 许可证</a> 发布。</p>
+        </footer>
+    </div>
+</body>
+</html>
