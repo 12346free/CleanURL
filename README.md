@@ -1,3 +1,4 @@
+请只从release下载,本项目内的的文件已经过时
 # 🧹 CleanUrl · 链接净化插件
 
 > Clean suspicious or obfuscated links from your clipboard — restore real URLs with one click!
