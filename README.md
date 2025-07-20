@@ -2,7 +2,7 @@
 
 > Clean suspicious or obfuscated links from your clipboard — restore real URLs with one click!
 
-CleanUrl 是一个浏览器插件（适用于 Microsoft Edge 和 Chromium 内核的 Chrome 浏览器），用于将经过“隐写”处理的 URL 还原为可访问的原始链接。
+CleanUrl 是一个浏览器插件（适用于 Firefox 和 Chromium 内核的浏览器），用于将经过“隐写”处理的 URL 还原为可访问的原始链接。
 
 ---
 
@@ -26,7 +26,7 @@ CleanUrl 是一个浏览器插件（适用于 Microsoft Edge 和 Chromium 内核
 
 ## 📦 安装 Installation
 
-### ✅ 开发者模式加载（适用于 Edge / Chrome）
+### ✅ 开发者模式加载（适用于 Edge / Chrome / Firrfox）
 
 1. 克隆或下载此仓库
 2. 打开浏览器地址栏访问：`edge://extensions` 或 `chrome://extensions`
@@ -51,7 +51,7 @@ CleanUrl 是一个浏览器插件（适用于 Microsoft Edge 和 Chromium 内核
 插件将根据浏览器语言自动显示界面文字：
 
 - 🇨🇳 简体中文（zh-CN）
-- 🇹🇼 繁體中文（zh-TW）
+- 🇭🇰 繁體中文（zh-TW）
 - 🇺🇸 English（en）
 
 ---
@@ -66,7 +66,7 @@ CleanUrl 是一个浏览器插件（适用于 Microsoft Edge 和 Chromium 内核
 
 ## 📁 项目地址 Project Repo
 
-[👉 GitHub.com/miea1/CleanUrl](https://github.com/miea1/CleanUrl)
+[👉 GitHub.com/12346free/CleanURL](https://github.com/1236free/CleanURL)
 
 ---
 
@@ -76,5 +76,5 @@ This project release with Apache-2.0 license
 
 ---
 
-Made with ❤️ by [MieaGo](https://github.com/miea1)
+
 
