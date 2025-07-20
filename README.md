@@ -33,7 +33,7 @@ CleanUrl 是一个浏览器插件（适用于 Firefox 和 Chromium 内核的浏�
 2. 打开浏览器地址栏访问：`edge://extensions` 或 `chrome://extensions`
 3. 开启右上角的“开发者模式”
 4. 点击“加载已解压的扩展程序”
-5. 选择 `CleanUrl/` 文件夹即可
+5. 选择 `CleanUrl-main/` 文件夹即可
 
 ---
 
